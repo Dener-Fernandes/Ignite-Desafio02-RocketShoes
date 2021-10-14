@@ -33,9 +33,6 @@ const Home = (): JSX.Element => {
     return sumAmountObject;
   }, {} as CartItemsAmount);
 
-  console.log(cartItemsAmount);
-
-
   useEffect(() => {
     async function loadProducts() {
       // TODO
@@ -54,7 +51,6 @@ const Home = (): JSX.Element => {
   function handleAddProduct(id: number) {
     // TODO
     addProduct(id);
-
   }
 
   return (
